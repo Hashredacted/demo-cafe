@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brewe Café — Every Cup Feels Like Home</title>
+  <meta name="description"
+    content="Brewe Café — freshly brewed specialty coffee, hand-crafted meals, and a cozy space for slow mornings and meaningful conversations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo" id="logo-link">
+        <span class="logo-icon">☕</span>
+        <span class="logo-text">Brewe<span class="logo-dot">.</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#reservation" class="btn btn-reserve" id="reserve-btn">Reserve a Table →</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&q=80&fit=crop"
+        alt="Hands holding coffee cups together" class="hero-img" id="hero-image" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-label">WELCOME TO BREWE CAFÉ</p>
+      <h1 class="hero-title">Every Cup Feels<br /><em>Like Home..</em></h1>
+      <p class="hero-sub">Freshly brewed coffees, hand-crafted meals, and a space designed for slow mornings and
+        meaningful conversations.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-primary" id="explore-menu-btn">Explore Menu →</a>
+        <a href="#about" class="btn btn-outline" id="about-btn">Our Story</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span class="scroll-line"></span>
+      <span class="scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORY PILLS ===== -->
+  <section class="category-strip">
+    <div class="container">
+      <div class="category-grid">
+        <div class="cat-item" id="cat-coffee">
+          <div class="cat-icon">☕</div>
+          <span>Coffee</span>
+        </div>
+        <div class="cat-item" id="cat-pastry">
+          <div class="cat-icon">🥐</div>
+          <span>Pastries</span>
+        </div>
+        <div class="cat-item" id="cat-food">
+          <div class="cat-icon">🥗</div>
+          <span>Brunch</span>
+        </div>
+        <div class="cat-item" id="cat-dessert">
+          <div class="cat-icon">🍰</div>
+          <span>Desserts</span>
+        </div>
+        <div class="cat-item" id="cat-cold">
+          <div class="cat-icon">🧋</div>
+          <span>Cold Drinks</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">WHY CHOOSE US</p>
+        <h2 class="section-title">A Place Made with <em>Love & Craft</em></h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" id="feat-1">
+          <div class="feat-number">01</div>
+          <h3>Specialty Coffee Selection</h3>
+          <p>Hand-sourced single-origin beans from Ethiopia, Colombia, and Indonesia — roasted fresh every week for
+            maximum flavour.</p>
+        </div>
+        <div class="feature-card" id="feat-2">
+          <div class="feat-number">02</div>
+          <h3>Cozy Atmosphere & Ambiance</h3>
+          <p>Warm lighting, plush seating, curated music — every corner of Brewe is designed for you to slow down and
+            savour the moment.</p>
+        </div>
+        <div class="feature-card" id="feat-3">
+          <div class="feat-number">03</div>
+          <h3>Artisanal Baked Goods</h3>
+          <p>Freshly baked croissants, sourdough, and seasonal pastries made daily by our in-house bakers using
+            traditional techniques.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SPECIALTY SPLIT ===== -->
+  <section class="specialty" id="specialty">
+    <div class="specialty-inner">
+      <div class="specialty-img-wrap">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80&fit=crop"
+          alt="Barista making latte art" class="specialty-img" id="specialty-image" />
+        <div class="specialty-badge">
+          <span class="badge-num">100%</span>
+          <span class="badge-label">Satisfaction Guarantee</span>
+        </div>
+      </div>
+      <div class="specialty-content">
+        <p class="section-label">WHAT DO WE DO?</p>
+        <h2 class="section-title">Specialty Coffee<br /><em>Selection</em></h2>
+        <div class="specialty-divider"></div>
+        <p class="specialty-desc">Explore our curated selection of specialty coffees sourced from around the world. Each
+          cup is a journey — from the misty highlands of Ethiopia to the volcanic soils of Guatemala.</p>
+        <ul class="specialty-list">
+          <li><span class="check">✓</span> Single-Origin Specialty Coffee</li>
+          <li><span class="check">✓</span> Paired to Perfection with Food</li>
+          <li><span class="check">✓</span> Relax and Unwind in Style</li>
+          <li><span class="check">✓</span> Expert Baristas on Every Shift</li>
+        </ul>
+        <a href="#menu" class="btn btn-primary" id="specialty-menu-btn">View Our Menu →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">OUR MENU</p>
+        <h2 class="section-title">Flavours Crafted <em>from the Heart</em></h2>
+        <p class="section-desc">Each dish and drink is crafted with premium ingredients and served with warmth. Explore
+          our seasonal offerings below.</p>
+      </div>
+
+      <div class="menu-tabs" id="menu-tabs">
+        <button class="tab-btn active" data-tab="coffee" id="tab-coffee">Coffee</button>
+        <button class="tab-btn" data-tab="food" id="tab-food">Brunch</button>
+        <button class="tab-btn" data-tab="desserts" id="tab-desserts">Desserts</button>
+        <button class="tab-btn" data-tab="cold" id="tab-cold">Cold Drinks</button>
+      </div>
+
+      <div class="menu-grid" id="menu-grid">
+        <!-- Coffee -->
+        <div class="menu-item" data-tab="coffee" id="menu-espresso">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&q=80&fit=crop" alt="Espresso"
+              loading="lazy" />
+            <div class="menu-overlay"><span>Signature Pick</span></div>
+          </div>
+          <div class="menu-info">
+            <h4>Classic Espresso</h4>
+            <p>Rich, bold, pure — our signature double shot.</p>
+            <span class="menu-price">$3.50</span>
+          </div>
+        </div>
+        <div class="menu-item" data-tab="coffee" id="menu-latte">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&q=80&fit=crop" alt="Latte"
+              loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <h4>Oat Milk Latte</h4>
+            <p>Velvety oat milk paired with smooth espresso.</p>
+            <span class="menu-price">$5.00</span>
+          </div>
+        </div>
+        <div class="menu-item" data-tab="coffee" id="menu-cappuccino">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?w=400&q=80&fit=crop" alt="Cappuccino"
+              loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <h4>Cappuccino</h4>
+            <p>Perfectly balanced espresso, steamed milk & foam.</p>
+            <span class="menu-price">$4.50</span>
+          </div>
+        </div>
+        <div class="menu-item" data-tab="coffee" id="menu-cold-brew">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80&fit=crop" alt="Cold Brew"
+              loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <h4>Cold Brew</h4>
+            <p>18-hour slow-steeped concentrate over ice.</p>
+            <span class="menu-price">$5.50</span>
+          </div>
+        </div>
+
+        <!-- Brunch -->
+        <div class="menu-item hidden" data-tab="food" id="menu-bowl">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80&fit=crop" alt="Brunch Bowl"
+              loading="lazy" />
+            <div class="menu-overlay"><span>Chef's Pick</span></div>
+          </div>
+          <div class="menu-info">
+            <h4>Sunrise Brunch Bowl</h4>
+            <p>Eggs, avocado, cherry tomatoes, greens & seeds.</p>
+            <span class="menu-price">$12.00</span>
+          </div>
+        </div>
+        <div class="menu-item hidden" data-tab="food" id="menu-toast">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400&q=80&fit=crop"
+              alt="Avocado Toast" loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <h4>Avocado Toast</h4>
+            <p>Sourdough, smashed avo, poached egg & chilli flakes.</p>
+            <span class="menu-price">$10.50</span>
+          </div>
+        </div>
+        <div class="menu-item hidden" data-tab="food" id="menu-pancakes">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80&fit=crop" alt="Pancakes"
+              loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <h4>Fluffy Pancakes</h4>
+            <p>Stack of three with maple syrup and fresh berries.</p>
+            <span class="menu-price">$11.00</span>
+          </div>
+        </div>
+        <div class="menu-item hidden" data-tab="food" id="menu-granola">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80&fit=crop"
+              alt="Granola Bowl" loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <h4>Granola & Yoghurt</h4>
+            <p>House granola, Greek yoghurt, seasonal fruit compote.</p>
+            <span class="menu-price">$9.00</span>
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-item hidden" data-tab="desserts" id="menu-tiramisu">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=80&fit=crop" alt="Tiramisu"
+              loading="lazy" />
+            <div class="menu-overlay"><span>Fan Favourite</span></div>
+          </div>
+          <div class="menu-info">
+            <h4>Classic Tiramisu</h4>
+            <p>Mascarpone, espresso-soaked ladyfingers, cocoa dust.</p>
+            <span class="menu-price">$7.50</span>
+          </div>
+        </div>
+        <div class="menu-item hidden" data-tab="desserts" id="menu-brownie">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&q=80&fit=crop" alt="Brownie"
+              loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <h4>Fudge Brownie</h4>
+            <p>Warm dark chocolate brownie with vanilla gelato.</p>
+            <span class="menu-price">$6.50</span>
+          </div>
+        </div>
+        <div class="menu-item hidden" data-tab="desserts" id="menu-cheesecake">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80&fit=crop" alt="Cheesecake"
+              loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <h4>New York Cheesecake</h4>
+            <p>Velvety cream cheese on a buttery biscuit crust.</p>
+            <span class="menu-price">$7.00</span>
+          </div>
+        </div>
+        <div class="menu-item hidden" data-tab="desserts" id="menu-croissant">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&q=80&fit=crop" alt="Croissant"
+              loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <h4>Butter Croissant</h4>
+            <p>Flaky, golden, and buttery — baked fresh every morning.</p>
+            <span class="menu-price">$4.00</span>
+          </div>
+        </div>
+
+        <!-- Cold Drinks -->
+        <div class="menu-item hidden" data-tab="cold" id="menu-matcha">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=400&q=80&fit=crop" alt="Matcha Latte"
+              loading="lazy" />
+            <div class="menu-overlay"><span>New Arrival</span></div>
+          </div>
+          <div class="menu-info">
+            <h4>Iced Matcha Latte</h4>
+            <p>Premium ceremonial matcha with cold oat milk.</p>
+            <span class="menu-price">$6.00</span>
+          </div>
+        </div>
+        <div class="menu-item hidden" data-tab="cold" id="menu-frappe">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=80&fit=crop" alt="Frappe"
+              loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <h4>Caramel Frappé</h4>
+            <p>Blended espresso, caramel sauce and whipped cream.</p>
+            <span class="menu-price">$6.50</span>
+          </div>
+        </div>
+        <div class="menu-item hidden" data-tab="cold" id="menu-lemonade">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1527960471264-932f39eb5846?w=400&q=80&fit=crop" alt="Lemonade"
+              loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <h4>Mint Lemonade</h4>
+            <p>Freshly squeezed lemons, mint, sparkling water.</p>
+            <span class="menu-price">$4.50</span>
+          </div>
+        </div>
+        <div class="menu-item hidden" data-tab="cold" id="menu-smoothie">
+          <div class="menu-img-wrap">
+            <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&q=80&fit=crop" alt="Smoothie"
+              loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <h4>Berry Smoothie</h4>
+            <p>Mixed berries, banana, coconut milk, honey.</p>
+            <span class="menu-price">$5.50</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-cta">
+        <a href="#" class="btn btn-outline-dark" id="full-menu-btn">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-content">
+        <p class="section-label">ABOUT US</p>
+        <h2 class="section-title">The Flavors from<br /><em>Around the World</em></h2>
+        <div class="specialty-divider"></div>
+        <p>Welcome to Brewe, a neighbourhood café born from a simple belief — that great coffee and good food can change
+          the entire tone of your day. We are a team of passionate baristas, bakers, and food lovers dedicated to
+          serving every cup and plate with intention.</p>
+        <p>Our menu draws inspiration from global flavours, paired with locally-sourced ingredients. From Japanese-style
+          matcha to Italian espresso traditions, we bring the world to your table.</p>
+        <div class="about-stats">
+          <div class="stat" id="stat-years">
+            <span class="stat-num">8+</span>
+            <span class="stat-label">Years of Craft</span>
+          </div>
+          <div class="stat" id="stat-cups">
+            <span class="stat-num">50K</span>
+            <span class="stat-label">Cups Served</span>
+          </div>
+          <div class="stat" id="stat-rating">
+            <span class="stat-num">4.9★</span>
+            <span class="stat-label">Average Rating</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary" id="about-contact-btn">Make a Reservation →</a>
+      </div>
+      <div class="about-gallery">
+        <div class="about-img-grid">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=400&q=80&fit=crop"
+            alt="Barista pouring latte art" class="about-img big" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=400&q=80&fit=crop" alt="Café interior"
+            class="about-img" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=400&q=80&fit=crop"
+            alt="Coffee and pastry" class="about-img" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=400&q=80&fit=crop" alt="Coffee beans"
+            class="about-img" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">OUR GALLERY</p>
+        <h2 class="section-title">Dining at a <em>Higher Quality</em></h2>
+      </div>
+      <div class="gallery-mosaic">
+        <div class="gal-item gal-tall" id="gal-1">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80&fit=crop" alt="Coffee art"
+            loading="lazy" />
+          <div class="gal-hover"><span>Coffee Art</span></div>
+        </div>
+        <div class="gal-item" id="gal-2">
+          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80&fit=crop" alt="Dessert"
+            loading="lazy" />
+          <div class="gal-hover"><span>Desserts</span></div>
+        </div>
+        <div class="gal-item" id="gal-3">
+          <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80&fit=crop" alt="Café bar"
+            loading="lazy" />
+          <div class="gal-hover"><span>Our Bar</span></div>
+        </div>
+        <div class="gal-item gal-wide" id="gal-4">
+          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600&q=80&fit=crop"
+            alt="Café interior" loading="lazy" />
+          <div class="gal-hover"><span>Interior</span></div>
+        </div>
+        <div class="gal-item" id="gal-5">
+          <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&q=80&fit=crop" alt="Brunch"
+            loading="lazy" />
+          <div class="gal-hover"><span>Brunch</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">REVIEWS</p>
+        <h2 class="section-title">What Our Guests <em>Are Saying</em></h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card" id="review-1">
+          <div class="stars">★★★★★</div>
+          <p>"Brewe has become my morning ritual. The oat milk latte is the best I've ever had and the croissants are
+            absolutely divine. A true gem."</p>
+          <div class="reviewer">
+            <img src="https://i.pravatar.cc/50?img=47" alt="Sarah M." loading="lazy" />
+            <div>
+              <strong>Sarah Mitchell</strong>
+              <span>Food Blogger · New York</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card" id="review-2">
+          <div class="stars">★★★★★</div>
+          <p>"The atmosphere is simply magical. Every time I walk in, I feel completely at ease. The specialty coffee
+            selection is world-class and the staff are wonderful."</p>
+          <div class="reviewer">
+            <img src="https://i.pravatar.cc/50?img=12" alt="James K." loading="lazy" />
+            <div>
+              <strong>James Kowalski</strong>
+              <span>Architect · Chicago</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card featured" id="review-3">
+          <div class="stars">★★★★★</div>
+          <p>"I brought my whole team here for a brunch meeting and everyone was blown away. The Sunrise Bowl and Cold
+            Brew combo is absolutely addictive. We'll be back every week!"</p>
+          <div class="reviewer">
+            <img src="https://i.pravatar.cc/50?img=31" alt="Priya A." loading="lazy" />
+            <div>
+              <strong>Priya Anand</strong>
+              <span>Creative Director · London</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESERVATION CTA ===== -->
+  <section class="reservation-cta" id="reservation">
+    <div class="reservation-bg">
+      <img src="https://images.unsplash.com/photo-1559305616-3f99cd43e353?w=1600&q=80&fit=crop"
+        alt="Café evening ambiance" loading="lazy" />
+      <div class="res-overlay"></div>
+    </div>
+    <div class="res-content">
+      <p class="section-label light">VISIT US</p>
+      <h2 class="section-title light">Join Us for a Cozy<br /><em>Afternoon at the Café</em></h2>
+      <p class="res-desc">Whether it's your morning coffee ritual or a special occasion, we'd love to have you. Reserve
+        your table and we'll take care of the rest.</p>
+      <div class="res-form" id="reservation-form">
+        <input type="text" placeholder="Your Name" id="res-name" />
+        <input type="date" id="res-date" />
+        <select id="res-guests">
+          <option value="">Guests</option>
+          <option value="1">1 Guest</option>
+          <option value="2">2 Guests</option>
+          <option value="3">3 Guests</option>
+          <option value="4">4 Guests</option>
+          <option value="5+">5+ Guests</option>
+        </select>
+        <button class="btn btn-gold" id="book-table-btn" onclick="handleReservation()">Find a Table</button>
+      </div>
+      <p class="guarantee">☑ 100% Satisfaction Guarantee</p>
+    </div>
+  </section>
+
+  <!-- ===== FIND US ===== -->
+  <section class="find-us" id="contact">
+    <div class="container">
+      <div class="find-us-inner">
+        <div class="find-us-info">
+          <p class="section-label">FIND US</p>
+          <h2 class="section-title">Come Visit <em>Brewe Café</em></h2>
+          <div class="contact-details">
+            <div class="contact-item" id="contact-address">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Address</strong>
+                <p>123 Brew Street, Coffee Quarter<br />San Francisco, CA 94102</p>
+              </div>
+            </div>
+            <div class="contact-item" id="contact-hours">
+              <span class="contact-icon">🕐</span>
+              <div>
+                <strong>Hours</strong>
+                <p>Mon–Fri: 7:00 AM – 9:00 PM<br />Sat–Sun: 8:00 AM – 10:00 PM</p>
+              </div>
+            </div>
+            <div class="contact-item" id="contact-phone">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <p>+1 (415) 555-BREW<br />hello@brewecafe.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="find-us-map">
+          <div class="map-placeholder" id="map-placeholder">
+            <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=700&q=80&fit=crop"
+              alt="Cozy café exterior on a city street" loading="lazy" />
+            <div class="map-pin">
+              <span>📍</span>
+              <p>Brewe Café</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <span class="logo-icon">☕</span>
+              <span class="logo-text">Brewe<span class="logo-dot">.</span></span>
+            </a>
+            <p>A neighbourhood café where every cup tells a story. Freshly brewed, lovingly made.</p>
+            <div class="social-links">
+              <a href="#" class="social-link" id="social-instagram" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" id="social-facebook" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" id="social-twitter" aria-label="Twitter">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Main Menu</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#menu">Our Menu</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>The Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#features">Why Brewe</a></li>
+              <li><a href="#reviews">Reviews</a></li>
+              <li><a href="#reservation">Reserve</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Accessibility</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>Copyright © 2024 Brewe Café. All Rights Reserved.</p>
+        <p>Crafted with ♥ in San Francisco</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">✓</span>
+    <span id="toast-msg">Table reserved! We'll see you soon.</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
