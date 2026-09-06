@@ -1664,10 +1664,703 @@ ul {
   color: var(--purple-light);
 }
 
+/* ===== WHATSAPP NAV BUTTON ===== */
+.btn-wa-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(37, 211, 102, 0.12);
+  border: 1px solid rgba(37, 211, 102, 0.4);
+  color: #25D366;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.88rem;
+  padding: 10px 18px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.btn-wa-nav svg {
+  flex-shrink: 0;
+}
+
+.btn-wa-nav:hover {
+  background: #25D366;
+  color: #050508;
+  border-color: #25D366;
+  box-shadow: 0 0 24px rgba(37, 211, 102, 0.5);
+  transform: translateY(-2px);
+}
+
+/* ===== PROMOTIONAL BANNER (FROM FLYER) ===== */
+.promo-banner {
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.08) 0%, rgba(15, 15, 26, 0.95) 45%, rgba(124, 58, 237, 0.12) 100%);
+  border: 1.5px solid rgba(37, 211, 102, 0.35);
+  border-radius: var(--radius-xl);
+  padding: 38px 44px;
+  margin-bottom: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 36px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), 0 0 40px rgba(37, 211, 102, 0.1);
+  backdrop-filter: blur(16px);
+}
+
+.promo-banner::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -20%;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(37, 211, 102, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.promo-banner-left {
+  flex: 1;
+}
+
+.promo-tag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(37, 211, 102, 0.18);
+  border: 1px solid rgba(37, 211, 102, 0.45);
+  color: #25D366;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 5px 14px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.pulse-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #25D366;
+  box-shadow: 0 0 10px #25D366;
+  animation: waPulse 1.8s infinite;
+}
+
+.promo-heading {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 800;
+  line-height: 1.35;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.promo-desc {
+  color: var(--text-secondary);
+  font-size: 0.96rem;
+  line-height: 1.65;
+  margin-bottom: 20px;
+  max-width: 660px;
+}
+
+.promo-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.p-pill {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  color: var(--text-primary);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+}
+
+.p-pill:hover {
+  border-color: rgba(37, 211, 102, 0.4);
+  background: rgba(37, 211, 102, 0.08);
+}
+
+.promo-banner-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.btn-promo-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 16px 28px;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.38);
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.btn-promo-wa:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 36px rgba(37, 211, 102, 0.55);
+}
+
+.promo-hint {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+/* ===== CONTACT DETAILS WHATSAPP ENHANCEMENTS ===== */
+.cdetail-whatsapp {
+  background: rgba(37, 211, 102, 0.05);
+  border: 1px solid rgba(37, 211, 102, 0.22);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+}
+
+.cdetail-icon.wa-icon {
+  background: rgba(37, 211, 102, 0.15);
+  border-color: rgba(37, 211, 102, 0.35);
+  color: #25D366;
+}
+
+.cdetail-body {
+  flex: 1;
+}
+
+.wa-action-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.wa-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(37, 211, 102, 0.1);
+  border: 1px solid rgba(37, 211, 102, 0.3);
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: var(--transition);
+  width: fit-content;
+}
+
+.wa-dot {
+  width: 7px;
+  height: 7px;
+  background: #25D366;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #25D366;
+}
+
+.wa-arrow {
+  color: #25D366;
+  font-size: 0.95rem;
+  transition: transform 0.2s;
+}
+
+.wa-link-btn:hover {
+  background: #25D366;
+  color: #050508;
+  border-color: #25D366;
+  transform: translateX(4px);
+  box-shadow: 0 4px 18px rgba(37, 211, 102, 0.4);
+}
+
+.wa-link-btn:hover .wa-arrow {
+  color: #050508;
+  transform: translate(2px, -2px);
+}
+
+.contact-call-link {
+  color: var(--text-primary);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.contact-call-link:hover {
+  color: var(--purple-light);
+}
+
+.contact-sep {
+  color: var(--text-muted);
+  margin: 0 6px;
+}
+
+/* Form Instant Chat Row */
+.form-submit-block {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.or-separator {
+  position: relative;
+  text-align: center;
+  margin: 6px 0;
+}
+
+.or-separator::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--border);
+  z-index: 1;
+}
+
+.or-separator span {
+  position: relative;
+  z-index: 2;
+  background: var(--bg-card);
+  padding: 0 14px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.btn-wa-direct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.15) 0%, rgba(18, 140, 126, 0.22) 100%);
+  border: 1.5px solid #25D366;
+  color: #25D366;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 15px 24px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.btn-wa-direct:hover {
+  background: #25D366;
+  color: #050508;
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.45);
+  transform: translateY(-2px);
+}
+
+/* Footer Contact List */
+.footer-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-wa-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-primary);
+  font-size: 0.88rem;
+  transition: var(--transition);
+}
+
+.footer-dot {
+  width: 6px;
+  height: 6px;
+  background: #25D366;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #25D366;
+}
+
+.footer-tag {
+  background: rgba(37, 211, 102, 0.14);
+  color: #25D366;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+}
+
+.footer-wa-link:hover {
+  color: #25D366;
+  transform: translateX(3px);
+}
+
+.footer-email-link {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  transition: var(--transition);
+}
+
+.footer-email-link:hover {
+  color: var(--purple-light);
+}
+
+.footer-hours {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* ===== FLOATING WHATSAPP WIDGET ===== */
+.wa-widget-wrap {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 99999;
+  font-family: var(--font-body);
+}
+
+.wa-bubble-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 12px;
+}
+
+.wa-bubble-btn {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.45);
+  position: relative;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+  outline: none;
+}
+
+.wa-bubble-btn:hover {
+  transform: scale(1.08) rotate(3deg);
+  box-shadow: 0 12px 38px rgba(37, 211, 102, 0.65);
+}
+
+.wa-bubble-btn:active {
+  transform: scale(0.95);
+}
+
+.wa-radar-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #25D366;
+  opacity: 0.75;
+  animation: waRadar 2.6s cubic-bezier(0.1, 0.8, 0.3, 1) infinite;
+  pointer-events: none;
+}
+
+.wa-radar-ring.ring-delay {
+  animation-delay: 1.3s;
+}
+
+.wa-bubble-badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: #ef4444;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--bg-void);
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.6);
+  animation: waBadgePulse 2s infinite;
+}
+
+.wa-btn-pill-label {
+  background: rgba(15, 15, 26, 0.92);
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  color: #f8fafc;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(12px);
+  pointer-events: none;
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+
+/* WhatsApp Popup Card */
+.wa-popup-card {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 350px;
+  background: var(--bg-card);
+  border: 1.5px solid rgba(37, 211, 102, 0.35);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.75), 0 0 45px rgba(37, 211, 102, 0.15);
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(24px) scale(0.92);
+  transform-origin: bottom right;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(20px);
+}
+
+.wa-popup-card.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.wa-popup-top {
+  background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.wa-popup-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wa-popup-avatar {
+  width: 42px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.wa-live-badge {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  width: 10px;
+  height: 10px;
+  background: #25D366;
+  border-radius: 50%;
+  border: 2px solid #075E54;
+}
+
+.wa-popup-profile h4 {
+  font-family: var(--font-display);
+  font-size: 0.98rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+  line-height: 1.2;
+}
+
+.wa-live-text {
+  font-size: 0.74rem;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.wa-dot-mini {
+  width: 6px;
+  height: 6px;
+  background: #25D366;
+  border-radius: 50%;
+}
+
+.wa-popup-close-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #ffffff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  transition: var(--transition);
+}
+
+.wa-popup-close-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.wa-popup-main {
+  padding: 20px;
+  background: var(--bg-surface);
+}
+
+.wa-speech-bubble {
+  background: rgba(37, 211, 102, 0.08);
+  border: 1px solid rgba(37, 211, 102, 0.2);
+  border-radius: 14px 14px 14px 4px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+
+.wa-speech-bubble p {
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.wa-msg-stamp {
+  font-size: 0.7rem;
+  color: #25D366;
+  font-family: var(--font-mono);
+  display: block;
+}
+
+.wa-team-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.wa-team-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.wa-team-item:hover {
+  border-color: #25D366;
+  background: rgba(37, 211, 102, 0.08);
+  transform: translateX(4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.wa-team-ico {
+  width: 36px;
+  height: 36px;
+  background: rgba(37, 211, 102, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.wa-team-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.wa-team-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.wa-team-num {
+  font-size: 0.84rem;
+  color: #25D366;
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.wa-team-avail {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.wa-team-btn {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #25D366;
+  background: rgba(37, 211, 102, 0.12);
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: var(--transition);
+}
+
+.wa-team-item:hover .wa-team-btn {
+  background: #25D366;
+  color: #050508;
+}
+
+.wa-popup-promo {
+  background: rgba(124, 58, 237, 0.1);
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.78rem;
+  color: var(--purple-light);
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes waPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+@keyframes waRadar {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+@keyframes waBadgePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
 /* ===== TOAST ===== */
 .toast {
   position: fixed;
-  bottom: 32px;
+  bottom: 108px;
   right: 32px;
   background: var(--bg-card);
   border: 1px solid var(--border-accent);

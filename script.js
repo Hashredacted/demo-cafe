@@ -266,3 +266,64 @@ document.querySelectorAll('.service-card').forEach(card => {
     card.style.transition = '';
   });
 });
+
+// ===== FLOATING WHATSAPP WIDGET INTERACTION =====
+const waBubbleBtn = document.getElementById('wa-bubble-btn');
+const waPopupCard = document.getElementById('wa-popup-card');
+const waPopupCloseBtn = document.getElementById('wa-popup-close-btn');
+const waPillLabel = document.getElementById('wa-pill-label');
+const waUnreadBadge = document.getElementById('wa-unread-badge');
+
+if (waBubbleBtn && waPopupCard) {
+  function toggleWaPopup(open) {
+    const isOpen = open !== undefined ? open : !waPopupCard.classList.contains('open');
+    waPopupCard.classList.toggle('open', isOpen);
+    waPopupCard.setAttribute('aria-hidden', String(!isOpen));
+    if (isOpen && waUnreadBadge) {
+      waUnreadBadge.style.display = 'none';
+    }
+  }
+
+  waBubbleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleWaPopup();
+  });
+
+  if (waPopupCloseBtn) {
+    waPopupCloseBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleWaPopup(false);
+    });
+  }
+
+  // Prevent clicks inside popup from closing it
+  waPopupCard.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('#wa-widget-wrap')) {
+      toggleWaPopup(false);
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && waPopupCard.classList.contains('open')) {
+      toggleWaPopup(false);
+    }
+  });
+
+  // Auto nudge after 4 seconds if not opened yet
+  setTimeout(() => {
+    if (!waPopupCard.classList.contains('open') && waPillLabel) {
+      waPillLabel.style.transform = 'scale(1.06)';
+      waPillLabel.style.borderColor = 'rgba(37, 211, 102, 0.8)';
+      setTimeout(() => {
+        waPillLabel.style.transform = '';
+        waPillLabel.style.borderColor = '';
+      }, 1500);
+    }
+  }, 4000);
+}
